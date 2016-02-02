@@ -25,8 +25,10 @@
   <meta property="og:description" content="湖北省金秋农业高新技术有限公司成立于2000年，是湖北省葡萄产业最早省级农业产业化龙头企业，中部葡萄主产区荆州市葡萄协会会长单位、“公安葡萄”地理标志申请人。公司是国内少有、湖北唯一同时拥有有机认证、绿色产品认证、富硒葡萄认证等体现产品质量与安全全部认证的葡萄企业">
   <meta property="og:site_name" content="金秋农业">
   <meta property="og:url" content="http://www.jinqiu0716.com">
-  <link rel="stylesheet" href="static/styles/main.css">
-  <script type="text/javascript" src="http://api.youziku.com/webfont/FastJS/yzk_057C31544734A5D6"></script>
+  <link rel="stylesheet" href="./static/styles/owl.carousel.css">
+  <link rel="stylesheet" href="./static/styles/owl.theme.css">
+  <link rel="stylesheet" href="./static/styles/owl.transitions.css">
+  <link rel="stylesheet" href="./static/styles/main.css">
 </head>
 
 <body class="page-index">
@@ -100,7 +102,7 @@
           </ul>
         </div><a href="about.html" class="button">更多荣誉</a>
       </section>
-      <section class="panel white right enquiries">
+      <section class="panel white right">
         <div class="text-wrapper">
           <h2 class="title">金秋产品</h2>
           <p>藤稔
@@ -111,6 +113,19 @@
               欧美杂交种，藤稔中优选，全生育期120-128天，穗重800-1200克，最大1500克，平均粒重15-18克，果肉硬，颜色好。</p>
         </div><a href="products.html" class="button">产品中心</a>
       </section>
+      <div id="demo-mini">
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+              <div id="owl-carousel-mini" class="owl-carousel">
+            <div class="item"><img src="./static/images/400-400-1.png" height="400" width="400"></div>
+            <div class="item"><img src="./static/images/400-400-2.png" height="400" width="400"></div>
+            <div class="item"><img src="./static/images/400-400-3.png" height="400" width="400"></div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="panel dark transparent news">
         <div class="text-wrapper">
           <h2 class="title">行业前沿</h2>
@@ -156,10 +171,40 @@
         <br><a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP 备05064466号</a></div>
     </div>
   </div>
+  <style>
+  #owl-carousel-mini .item img {
+    display: block;
+    width: 400px;
+  }
+  </style>
   <script src="static/scripts/scripts.js"></script>
-  <script type="text/javascript">
-  $youziku.load("#id1", "0e4bc00c5a0b4bafaad455f5f3f1a0af", "minijianguli"); /*$youziku.load("#id2", "0e4bc00c5a0b4bafaad455f5f3f1a0af", "minijianguli");*/ /*$youziku.load(".class1", "0e4bc00c5a0b4bafaad455f5f3f1a0af", "minijianguli");*/ /*$youziku.load(".class2", "0e4bc00c5a0b4bafaad455f5f3f1a0af", "minijianguli");*/ /*．．．*/
-  $youziku.draw();
+  <script src="./static/scripts/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="./static/scripts/owl-carousel/owl.carousel.min.js"></script>
+  <script>
+  $(document).ready(function() {
+
+    var owl = $("#owl-carousel");
+    var owl_mini = $('#owl-carousel-mini');
+    owl_mini.owlCarousel({
+      autoPlay: true,
+      autoplayTimeout: 1000,
+      navigation: true,
+      singleItem: true,
+      transitionStyle: "backSlide"
+    });
+    $('.owl-pagination').hide();
+    $('.owl-buttons').hide();
+    //Select Transtion Type
+    $("#transitionType").change(function() {
+      var newValue = $(this).val();
+
+      //TransitionTypes is owlCarousel inner method.
+      owl.data("owlCarousel").transitionTypes(newValue);
+
+      //After change type go to next slide
+      owl.trigger("owl.next");
+    });
+  });
   </script>
 </body>
 
