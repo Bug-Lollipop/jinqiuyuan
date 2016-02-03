@@ -5026,16 +5026,5 @@ window.Carousel = function() {
         $(this).parent().addClass("valid-field"), $(this).parent().parent().removeClass("error"), "id_time" === e && h(this.value)
       }
     })
-  }, h = function(e) {
-    var t;
-    t = parseInt(e.substring(0, 2)) > 14 ? "dinner" : "lunch", $("input[name=lunch_dinner]").filter("[value=" + t + "]").attr("checked", !0)
-  }, r("id_time"), r("id_num_people"), $("#id_date").pickadate({
-    editable: !1,
-    today: "",
-    clear: "",
-    onSet: function() {
-      var e, n;
-      return window.l = this, n = this.get("select", "ddd"), "Mon" === n || "Tue" === n || "Wed" === n ? ("lunch" === $("input[name=lunch_dinner]:radio").val() && (e = $("#id_time"), e.html(t(18, 22)), e.selectOrDie("destroy"), r("id_time")), $("#lunch").prop("disabled", !0), $("input[name=lunch_dinner]").filter("[value=dinner]").attr("checked", !0)) : $("#lunch").prop("disabled", !1)
-    }
-  }), $("input[name=lunch_dinner]:radio").click(m), $("#reservation_form").submit(c), $("#subscribe_form").submit(u), $(".floatlabel-wrapper").find(d).focus(!0, f).blur(!1, f).on("keyup blur change", g)
+  }
 });
