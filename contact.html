@@ -25,6 +25,7 @@
   <meta property="og:site_name" content="金秋农业">
   <meta property="og:url" content="http://www.jinqiu0716.com">
   <link rel="stylesheet" href="static/styles/main.css">
+  <script type="text/javascript" src="http://api.youziku.com/webfont/FastJS/yzk_057C31544734A5D6"></script>
 </head>
 
 <body class="page-contact">
@@ -52,7 +53,7 @@
     <section class="panel-top white">
       <div class="container">
         <div class="panel full">
-          <h1 class="main-title letter-offset">联系我们</h1>
+          <h1 id="id1" class="main-title letter-offset">联系我们</h1>
           <div class="contact">
             <div class="left">
               <p class="address">湖北省荆州市
@@ -71,7 +72,7 @@
       </div>
     </section>
     <div class="map hideMobilebg">
-      <a href="http://j.map.baidu.com/f33an" target="_blank" class="mobilemap hide-desktop"><img src="../static/images/bg/bg-map-750.jpg"></a>
+      <a href="http://j.map.baidu.com/f33an" target="_blank" class="mobilemap hide-desktop"><!-- <img src="../static/images/bg/bg-map-750.jpg"> --></a>
       <a href="http://j.map.baidu.com/f33an" target="_blank" class="marker">
         <div class="icon-logo"><img src="static/images/logo-500-250.png" height="80" width="160"></div>
         <!-- <div class="info">Get directions</div> -->
@@ -108,6 +109,10 @@
     </div>
   </div>
   <script src="static/scripts/scripts.js"></script>
+  <script type="text/javascript">
+   $youziku.load("#id1", "b9bbffef703741f69ba967ef811d6fc0", "minijianxiaolishu");
+  $youziku.draw();
+  </script>
 </body>
 
 </html>

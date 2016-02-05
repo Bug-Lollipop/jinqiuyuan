@@ -4310,3 +4310,4 @@ window.Carousel = function() {
     togglePanel: $(".toggle-panel")
   })
 });
+ 
