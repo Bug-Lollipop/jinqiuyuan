@@ -1489,7 +1489,7 @@
   }
   
   .top .main-logo {
-    padding-top: 40%;
+    padding-top: 50%;
     background-image: url(../images/logo-300.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -1502,14 +1502,15 @@
       background-size: 250px;
     }
     .top .main-logo {
+      padding-top: 50%;
       background-size: 200px;
     }
   }
   
   @media only screen and (min-width: 769px) {
     .top .page-icon-logo {
-      padding-top: 50%;
-      background-size: 300px;
+      padding-top: 35%;
+      background-size: 250px;
     }
     .top .main-logo {
       padding-top: 35%;
@@ -1519,11 +1520,11 @@
   
   @media only screen and (min-width: 1025px) {
     .top .page-icon-logo {
-      padding-top: 35%;
+      padding-top: 28%;
       background-size: 300px;
     }
     .top .main-logo {
-      padding-top: 30%;
+      padding-top: 28%;
       background-image: url(../images/logo-300.png);
       background-repeat: no-repeat;
       background-position: center;
@@ -1540,7 +1541,7 @@
       background-size: 300px;
     }
     .top .page-icon-logo {
-      padding-top: 40%;
+      padding-top: 30%;
       background-size: 300px;
     }
   }
