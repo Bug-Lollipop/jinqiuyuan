@@ -25,6 +25,7 @@
   <meta property="og:site_name" content="金秋农业">
   <meta property="og:url" content="http://www.jinqiu0716.com">
   <link rel="stylesheet" href="static/styles/main.css">
+  <script type="text/javascript" src="http://api.youziku.com/webfont/FastJS/yzk_057C31544734A5D6"></script>
 </head>
 
 <body class="page-about">
@@ -52,21 +53,13 @@
     <section class="panel-top white">
       <div class="container">
         <div class="panel">
-          <h1 class="main-title">企业文化</h1>
+          <h1 id="id1" class="main-title">企业文化</h1>
           <p><span class="company-name">荆州市金秋农业高新技术有限公司</span>位于荆州市长江大桥南岸江南新区，是一个由农业科技人员二次创业组建、深圳市金派实业有限公司投资控股的民营科技企业。 荆州市金秋农业高新技术有限公司以“服务农业、服务农村、服务农民”为理念，诚信为本，贴近农民。把设施农业、生态农业、效益农业、绿色环保和观光旅游结合在一起，引进、示范、研究、推、普及、应用农业新品种、新技术、新模式。走公司、基地＋农户联产业，科研、教学（培训）、生产、营销综合发展的路，促进农民增收，推动社会主义新农村建设又好又快发展。
           </p>
         </div>
       </div>
     </section>
-    <!--   <section class="video-container">
-      <div class="panel right">
-        <embed src="http://player.youku.com/player.php/sid/XMTQ2MDYxMTQxNg==/v.swf" allowFullScreen="true" quality="high" width="512" height="500" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
-      </div>
-    </section> -->
     <section class="container company-details-container">
-      <!--  <div class="video right">
-        <embed src="http://player.youku.com/player.php/sid/XMTQ2MDYxMTQxNg==/v.swf" allowFullScreen="true" quality="high" width="510" height="498" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
-      </div> -->
       <div class="panel dark left company-details">
         <div class="text-wrapper">
           荆州市金秋农业高新技术有限公司现有农业科技研发基地100亩，示范基地2000亩，生产基地15000亩。引种、示范、生产高效经济作物品种20多个系列100多个品种，年创产值1.5亿元； 金秋农民科技培训星火学校年培训能力3000人；金秋技术物质配送中心直接受益面积5万多亩。
@@ -77,14 +70,18 @@
         </div>
       </div>
       <div class="panel right video">
-        <embed src="http://player.youku.com/player.php/sid/XMTQ2MDYxMTQxNg==/v.swf" allowFullScreen="true" quality="high" width="510" height="350" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+        <video width="510" height="290" controls="controls">
+          <source src="./static/grape.mp4" type="video/mp4">
+          <object data="" width="510" height="290">
+            <embed width="510" height="290" src="./static/grape.mp4">
+          </object>
+        </video>
       </div>
     </section>
     <section class="container cert">
       <div class="panel full white ">
         <div class="text-wrapper">
-          <h1 class="title">荣誉证书
-          </h1>
+          <h1 id="id2" class="title">荣誉证书 </h1>
           <ul>
             <li><img src="static/images/cert/cert-1.png">
               <span>公安县党政干部“两转一推”县级示范基地</span>
@@ -136,7 +133,7 @@
     </section>
     <section class="container">
       <div class="panel full contact">
-        <h2 class="title" style="color:#000;">联系我们</h2>
+        <h2 id="id3" class="title" style="color:#000;">联系我们</h2>
         <div class="left">
           <p class="address">湖北省荆州市
             <br>江南新区</p>
@@ -166,5 +163,11 @@
     </div>
     <script src="static/scripts/scripts.js"></script>
 </body>
+<script type="text/javascript">
+$youziku.load("#id1", "b9bbffef703741f69ba967ef811d6fc0", "minijianxiaolishu");
+$youziku.load("#id2", "b9bbffef703741f69ba967ef811d6fc0", "minijianxiaolishu");
+$youziku.load("#id3", "b9bbffef703741f69ba967ef811d6fc0", "minijianxiaolishu");
+$youziku.draw();
+</script>
 
 </html>
