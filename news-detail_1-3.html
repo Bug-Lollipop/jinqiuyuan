@@ -9,6 +9,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <base href="">
   <title>金秋农业</title>
   <meta name="description" content="湖北省金秋农业高新技术有限公司成立于2000年，是湖北省葡萄产业最早省级农业产业化龙头企业，中部葡萄主产区荆州市葡萄协会会长单位、“公安葡萄”地理标志申请人。公司是国内少有、湖北唯一同时拥有有机认证、绿色产品认证、富硒葡萄认证等体现产品质量与安全全部认证的葡萄企业。">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui ,user-scalable=no">
@@ -24,23 +25,25 @@
   <meta property="og:description" content="湖北省金秋农业高新技术有限公司成立于2000年，是湖北省葡萄产业最早省级农业产业化龙头企业，中部葡萄主产区荆州市葡萄协会会长单位、“公安葡萄”地理标志申请人。公司是国内少有、湖北唯一同时拥有有机认证、绿色产品认证、富硒葡萄认证等体现产品质量与安全全部认证的葡萄企业">
   <meta property="og:site_name" content="金秋农业">
   <meta property="og:url" content="http://www.jinqiuchina.net">
-  <link rel="stylesheet" href="static/styles/main.css">
-  <script src="static/scripts/jquery-1.8.2.min.js"></script>
+  <link rel="stylesheet" href="./static/styles/owl.carousel.css">
+  <link rel="stylesheet" href="./static/styles/owl.theme.css">
+  <link rel="stylesheet" href="./static/styles/owl.transitions.css">
+  <link rel="stylesheet" href="./static/styles/main.css">
   <script type="text/javascript" src="http://api.youziku.com/webfont/FastJS/yzk_057C31544734A5D6"></script>
 </head>
 
-<body class="page-news">
+<body class="page-news-detail">
   <!--[if lt IE 9]>
     <style>body{height: 880px !important;}#nav,#content{display:none;}*{margin: 0;}img{width: 100%;}</style>
     <a href="http://browsehappy.com/" style="display:block; text-align:center;" target="_blank"><img style="border: 0;" src="static/images/ie8.jpg" /></a>
     <![endif]-->
-  <div class="nav-toggle hide-desktop"><span></span><span></span><span></span></div>
-  <div id="nav">
+  <div style="display: block;" class="nav-toggle hide-desktop"><span></span><span></span><span></span></div>
+  <div class="" style="top: 537px;" id="nav">
     <ul>
       <li><a href="index.html">首页</a></li>
       <li><a href="about.html">关于我们</a></li>
       <li><a href="products.html">产品中心</a></li>
-      <li class="active"><a href="news.html">行业前沿</a></li>
+      <li class="native"><a href="news.html">行业前沿</a></li>
       <li><a href="contact.html">联系我们</a></li>
     </ul>
   </div>
@@ -48,31 +51,25 @@
     <div class="top">
       <a href="index.html" class="page-icon-logo"></a>
       <div class="top-carousel full-bg">
-        <div class="active news-top"></div>
+        <div class="active image-products-01"></div>
+      </div>
+    </div>
+    <div class="popup-bg">
+      <div class="panel center white">
+        <h2 id="ptitle" class="subtitle"></h2>
+        <br>
+        <p id="ppara"></p>
       </div>
     </div>
     <div class="panel-top white">
-      <ul id="menus">
-        <li><a href="#dynamic" class="button">行业动态</a></li>
-        <li><a href="#tech" class="button">&nbsp;技术&nbsp;</a></li>
-      </ul>
-    </div>
-    <div class="news-container container">
-      <section class="panel dark news">
-        <div id="dynamic" class="news-content ">
-          <p><a href="news-detail-1.html">不同颜色葡萄的不同功效</a><span>[2011-12-10]</span></p>
-          <p><a href="news-detail-2.html">酒杯：葡萄酒的“行头” </a><span>[2011-12-10]</span></p>
-          <p><a href="news-detail-3.html">金秋农业科技园区确定为全国青少年科普教育示范基地</a><span>[2011-12-10]</span></p>
-        </div>
-        <div id="tech" class="news-content">
-          <p><a href="news-detail_2-0.html">公安葡萄2012年病虫害防治规范-基本情况</a><span>[2011-12-10]</span></p>
-          <p><a href="news-detail_2-1.html">葡萄重要病害的发生与防治-霜霉病</a><span>[2011-12-30]</span></p>
-          <p><a href="news-detail_2-2.html">葡萄重要病害的发生与防治-炭疽病</a><span>[2011-12-30]</span></p>
-          <p><a href="news-detail_2-3.html">葡萄重要病害的发生与防治-白腐病</a><span>[2011-12-30]</span></p>
-          <p><a href="news-detail_2-4.html">葡萄重要病害的发生与防治-灰霉病</a><span>[2011-12-30]</span></p>
-          <p><a href="news-detail_2-5.html">葡萄重要病害的发生与防治-酸腐病</a><span>[2011-12-30]</span></p>   
-        </div>
-      </section>
+      <div class="container">
+        <section class="panel full">
+          <h1 class="main-title">金秋农业科技园区确定为全国青少年科普教育示范基地 </h1>
+          <p>2月22日，记者在金秋国家农业科技园区获悉，在农业部办公厅和共青团中央办公厅公布的2011年100个全国青少年农业科普示范基地名单中，天水国家农业科技园区荣耀上榜。
+    据了解，全国青少年科普示范基地是为广大青少年提供科普服务，促进其科学素质培养和提高的重要平台。其主要任务是充分发挥公益性科普基础设施作用，积极面向青少年及广大公众开放，大力开展经常化、群众化、社会化的农业科普活动，展示农业先进科技成果，积极开展青少年农业科普活动，向广大青少年传播农业科学知识，培养科学意识与方法。
+    2011年度全国青少年农业科普示范基地的认定工作是根据《全国青少年农业科普示范基地管理办法(试行)》有关规定，由农业部科技教育司和共青团中央农村青年工作部共同组织开展的。基地评选工作是在各单位申报的基础上，经各省级农业主管部门和省级团委的共同推荐，农业部科技教育司和共青团中央农村青年工作部最终确定了100个全国青少年农业科普示范基地。其中甘肃省共有2个单位被认定为2011年“全国青少年农业科普示范基地”，金秋国家农业科技园区位列其中。</p>
+        </section>
+      </div>
     </div>
     <section class="container">
       <div class="panel full contact">
